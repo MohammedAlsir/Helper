@@ -1,4 +1,4 @@
-﻿Words in Git :-
+﻿Words in Git :
     - Repository  -> shortcut -> Repo وتعني مخزن
     - Branch الفرع يمكن تاخذ جزء من المشروع وتعدله
     - Local Repo الخاص بك 
