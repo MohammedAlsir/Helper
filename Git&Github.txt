@@ -1,0 +1,60 @@
+Words in Git :
+    - Repository  -> shortcut -> Repo وتعني مخزن
+    - Branch الفرع يمكن تاخذ جزء من المشروع وتعدله
+    - Local Repo الخاص بك 
+    - Remote Repo -> ex -> Github -> Gitlab 
+    - Commit
+    - Clone
+    - Push رفع التعديلات للgithub
+    - Pull سحب التعديلات الجديدة
+    - Pull Request
+
+-----command
+- git clone http:// url
+- git status
+- git add 
+            = git add *
+            = git add main.css
+- git commit -m "msg"
+- git push origin main
+- git reset head mm.xlsx  => delete
+- git remote -v
+- git log
+
+- git config --global alias.st status لعمل اختصاراات   st = status
+
+-----branch
+- git branch               => for show all branch
+- git branch m7md          => create new branch
+- git checkout m7md        => open branch
+- git branch -d m7md       => delete branch
+- git checkout -b m7md     => create and open branch
+- git branch -m newname    => rename the branch
+-----stash
+- git stash                => تخزين الملفات دون رفعها عند عمل push
+- git stash save "msg"     => تخزين الملفات دون رفعها عند عمل push + msg 
+- git stash list           => لعرض الملفات التي تم عمل stash لها
+- git stash pop            => لاعادة الملفات مرة اخرى 
+- git stash apply          =>  لاعادة الملفات مرة اخرى دون حذفها من stash
+- git stash pop stash@{1}  =>   لاعادة الملفات مرة اخرى حسب الترتيب المطلوب 
+- git stash drop stash@{2} =>   لحذف الملفات   حسب الترتيب المطلوب 
+- git stash show stash@{2} =>   لعرض محتوى الملف   حسب الترتيب المطلوب 
+- git stash clear          => delete all stashs be content 
+
+-----clean
+- git clean -n             => show all file Would remove
+- git clean -f             => delete all file 
+
+-----public key
+- ssh-keygen -t rsa -b 4096 -C "m7mdb3sher@gmail.com"
+- cat ~/.ssh/id_rsa.pub
+- ssh -T git@github.com
+
+-----delet commit 
+- git reset --hard 77c478cfa8749a3273e946c0bc053201e9c6e4ca
+- git push origin main --force
+
+-----hide file 
+- touch .gitignore
+- git add -f text.text    => اضافة الملف اجباريا
+ 
