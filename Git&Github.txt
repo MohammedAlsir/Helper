@@ -80,4 +80,9 @@
 - git log 
 - git reset --hard xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - git push origin main --force
+
+
+-----
+= git pull --rebase origin main
+
  
