@@ -1,0 +1,12 @@
+-----install
+- npm install -g sass
+- sass source/stylesheets/index.scss build/stylesheets/index.css
+
+-----command
+- sass --version      
+
+-----watch
+-  sass --watch source/stylesheets/index.scss build/stylesheets/index.css
+
+-----style 
+- sass --watch css/style.scss css/style.css --style expanded

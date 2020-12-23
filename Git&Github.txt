@@ -30,6 +30,7 @@
 - git branch -d m7md       => delete branch
 - git checkout -b m7md     => create and open branch
 - git branch -m newname    => rename the branch
+
 -----stash
 - git stash                => تخزين الملفات دون رفعها عند عمل push
 - git stash save "msg"     => تخزين الملفات دون رفعها عند عمل push + msg 
@@ -57,4 +58,26 @@
 -----hide file 
 - touch .gitignore
 - git add -f text.text    => اضافة الملف اجباريا
+
+-----tag 
+- git tag                                                   => Show all tags
+- git tag v1.0                                              => Add New Tag
+- git tag -a v2.0 -m "New Version For Beginer"              => Add New Tag by msg
+- git push origin v2.0                                      => push tags to github
+- git tag -d v2.0                                           => Delete tag local
+- git push origin --delete v2.0                             => Delet From giyhub    
+
+-----New Repo
+- echo "# For-Tester" >> README.md
+- git init
+- git add README.md
+- git commit -m "first commit"
+- git branch -M main
+- git remote add origin git@github.com:MohammedAlsir/For-Tester.git
+- git push -u origin main
+
+-----reset
+- git log 
+- git reset --hard xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- git push origin main --force
  
