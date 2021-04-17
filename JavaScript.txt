@@ -1,0 +1,20 @@
+// Learn JavaScript
+** code                                         ** useing 
+** document.write("<b>Hello For My</b>");       ** just for testing
+** var yorAge = prompt("Enter Your Age");
+** var all = myArry.concat(myArryOther);  ==>دمج مصفوفتين  
+** myArry.push('end');          => للاضافة في نهاية المصفوفة 
+** myArry.unshift('first')      => للاضافة في بداية المصفوفة
+** myArry.pop();                =>  Delete Last Item
+** myArry.shift();              =>  Delete First Item
+** console.log(myArry.toString());   => convert To String
+** console.log(myArry.join(""));    => Join With Marks Or No   => دمج العناصر بعلامة او بدون الافتراضي هو الفاصلة
+** 
+** Math 
+**  ceil        => اعلى سقف    5.1=6        
+**  floor       => أقل سقف   5.5=5 
+**  round       => 5.5=6  && 5.4=5   حسب الرقم 
+**  min         => Math.min(40,50,80) الاصغر من بينهم
+**  max         => Math.max(40,50,80) الاكبر فيهم
+**  random      => console.log(Math.round(Math.random()*100)); // عدد عشوائي من صفر حتى 100 
+

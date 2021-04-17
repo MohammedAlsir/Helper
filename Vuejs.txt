@@ -1,0 +1,59 @@
+//  This is First Test in Vuejs
+        <div id="myDiv">
+            My Name Is {{name}}
+        </div>
+
+        <script>
+            var app = new Vue({
+            el : '#myDiv',
+            data :{
+                name : 'Mohammed Alsir Suliman',
+            }
+            })
+        </script>
+// SPA   => Single Page Application
+// MVVM  => Model View ViewModel
+            View ->   ViewModel              -> Model
+            html -> modifiles & update View  -> DB
+
+// Directives 
+    1 - v-text    =>   <p  v-text="name"></p>    ====>  data :{ name : 'Ali',code : '<b>helllo</b>'}
+    2 - v-html    =>   <p  v-html="code"></p>    ====>  data :{ name : 'Ali',code : '<b>helllo</b>'}
+    3 - v-for     =>   <li v-for="(oob , index) in oobs">{{index}} => {{oob}}</li>
+    4 - v-if      =>   <p  v-if="age == 18">young</p>
+    5 - v-else-if =>   <p  v-else-if="age > 15 && age < 40">tall</p>
+    6 - v-else    =>   <p  v-else>old</p>
+    7 - v-once    =>   <p  v-once>Welcome {{name}}</p> لا يتم تحديثه ابدا
+    8 - v-show    =>   <h1 v-show="name">{{name}}</h1>  يتم اخفاء العنصر  => display:none
+    9 - v-bind:src / v-bind:href   
+    9 - :src  /   :href  
+    10 - v-on:click  =>  <button v-on:click="counter++">ADD</button>
+    10 - @click  =>  <button v-on:click="counter++">ADD</button>
+    11 - v-model  => <input v-model="message" placeholder="edit me"><p>Message is: {{ message }}</p> يتم التعديل مباشرة اي ربط القيم مع بعضها
+// component
+    // Define a new component called button-counter
+    Vue.component('button-counter', {
+    data: function () {
+        return {
+        count: 0
+        }
+    },
+    template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+    })
+
+    usein in HTML ==> <button-counter></button-counter>
+
+// Methods
+   var my = new Vue({
+      el: '#app',
+      data: {
+        name: 'Mohammed',
+        count: 25
+      },
+      methods: {
+        calc : function(){
+          console.log('Run');
+          return this.count * 2
+        }
+      }
+    });
