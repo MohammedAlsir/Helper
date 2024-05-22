@@ -10,7 +10,7 @@
 ** console.log(myArry.toString());   => convert To String
 ** console.log(myArry.join(""));    => Join With Marks Or No   => دمج العناصر بعلامة او بدون الافتراضي هو الفاصلة
 ** 
-** Math 
+** Math          =
 **  ceil        => اعلى سقف    5.1=6        
 **  floor       => أقل سقف   5.5=5 
 **  round       => 5.5=6  && 5.4=5   حسب الرقم 

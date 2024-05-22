@@ -9,7 +9,7 @@ col-12    =>in Phone Screen
 -------------------- hidden / visable --------------------------
 ----------------------------------------------------------------
 Screen Size	            Class                                   
-
+ 
 Hidden on all	        .d-none
 Hidden only on xs	    .d-none .d-sm-block
 Hidden only on sm	    .d-sm-none .d-md-block
